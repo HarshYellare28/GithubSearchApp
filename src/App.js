@@ -37,9 +37,9 @@ const App = () => {
         <Header/>
         <Switch>
           <Route exact path="/GithubSearchApp" component={Home} />
-          <Route exact path="/GithubSearchApp/SignIn" component={SignIn} />
-          <Route exact path="/GithubSearchApp/SignUp" component={SignUp} />
-          <Route exact path="/GithubSearchApp/*" component={NotFound} />
+          <Route exact path="/SignIn" component={SignIn} />
+          <Route exact path="/SignUp" component={SignUp} />
+          <Route exact path="/*" component={NotFound} />
         </Switch>
         <Footer/>
       </UserContext.Provider>
