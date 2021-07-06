@@ -33,7 +33,7 @@ import {
     // Put any page behind login
     if(!context.user?.uid)
     {
-        return <Redirect to="https://harshyellare28.github.io/GithubSearchApp/SignIn"/>
+        return <Redirect to="/GithubSearchApp/SignIn"/>
     }
 
     return(

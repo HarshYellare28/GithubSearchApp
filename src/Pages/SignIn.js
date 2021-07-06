@@ -29,7 +29,7 @@ const SignIn = () => {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
     
-    const handleSignUp = () => {
+    const handleSignIn = () => {
         firebase
             .auth()
             .signInWithEmailAndPassword(email,password)
@@ -47,10 +47,10 @@ const SignIn = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        handleSignUp()
+        handleSignIn()
     }
     if(context.user?.uid){
-        return <Redirect to="/"/>
+        return <Redirect to="/GithubSearchApp"/>
     }
     return (
         <Container className="text-center">

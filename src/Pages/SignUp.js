@@ -50,7 +50,7 @@ const SignUp = () => {
         handleSignUp()
     }
     if(context.user?.uid){
-        return <Redirect to="/"/>
+        return <Redirect to="/GithubSearchApp"/>
     }
     return (
         <Container className="text-center">

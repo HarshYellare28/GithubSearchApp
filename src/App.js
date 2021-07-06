@@ -36,10 +36,10 @@ const App = () => {
       <UserContext.Provider value={{user,setUser}}>
         <Header/>
         <Switch>
-          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/" component={SignIn} />
-          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/Home" component={Home} />
-          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/SignUp" component={SignUp} />
-          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/*" component={NotFound} />
+          <Route exact path="/GithubSearchApp" component={Home} />
+          <Route exact path="/GithubSearchApp/SignIn" component={SignIn} />
+          <Route exact path="/GithubSearchApp/SignUp" component={SignUp} />
+          <Route exact path="/GithubSearchApp/*" component={NotFound} />
         </Switch>
         <Footer/>
       </UserContext.Provider>
