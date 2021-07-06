@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
 
 //react router
-import {HashRouter as Router,Switch,Route} from "react-router-dom"
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
 
 //Toast
 import {ToastContainer} from "react-toastify"
@@ -36,10 +36,10 @@ const App = () => {
       <UserContext.Provider value={{user,setUser}}>
         <Header/>
         <Switch>
-          <Route exact path="/GithubSearchApp/#/" component={Home} />
-          <Route exact path="/GithubSearchApp/#/SignIn" component={SignIn} />
-          <Route exact path="/GithubSearchApp/#/SignUp" component={SignUp} />
-          <Route exact path="/GithubSearchApp/#/*" component={NotFound} />
+          <Route exact path="/GithubSearchApp" component={Home} />
+          <Route exact path="/GithubSearchApp/SignIn" component={SignIn} />
+          <Route exact path="/GithubSearchApp/SignUp" component={SignUp} />
+          <Route exact path="/GithubSearchApp/*" component={NotFound} />
         </Switch>
         <Footer/>
       </UserContext.Provider>
