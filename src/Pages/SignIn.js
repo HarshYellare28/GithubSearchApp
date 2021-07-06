@@ -11,7 +11,7 @@ import {
     Col,
     CardBody,
     CardFooter,
-    CardHeader
+    CardHeader,
 } from "reactstrap"
 
 import firebase from "firebase/app"
@@ -29,7 +29,7 @@ const SignIn = () => {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
     
-    const handleSignIn = () => {
+    const handleSignUp = () => {
         firebase
             .auth()
             .signInWithEmailAndPassword(email,password)
@@ -47,10 +47,10 @@ const SignIn = () => {
 
     const handleSubmit = e => {
         e.preventDefault()
-        handleSignIn()
+        handleSignUp()
     }
     if(context.user?.uid){
-        return <Redirect to="/GithubSearchApp"/>
+        return <Redirect to="/"/>
     }
     return (
         <Container className="text-center">
