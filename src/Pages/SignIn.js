@@ -11,8 +11,7 @@ import {
     Col,
     CardBody,
     CardFooter,
-    CardHeader,
-    CardText
+    CardHeader
 } from "reactstrap"
 
 import firebase from "firebase/app"

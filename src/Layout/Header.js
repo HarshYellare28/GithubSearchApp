@@ -22,7 +22,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-dark"/>
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-              { context.user ? (<Nav.Link tag={Link} onClick={() => (context.setUser(null))} style={{color:"#CAD5E2",padding:"5px"}}>Log Out</Nav.Link>) : <Row><Nav.Link tag={Link} href="https://harshyellare28.github.io/GithubSearchApp/SignUp" style={{color:"#CAD5E2",padding:"5px",marginLeft:"15px"}}>Sign Up</Nav.Link><Nav.Link tag={Link} href="https://harshyellare28.github.io/GithubSearchApp/SignIn" style={{color:"#CAD5E2",padding:"5px",paddingLeft:"10px",marginRight:"10px"}}>Sign In</Nav.Link></Row> } 
+              { context.user ? (<Nav.Link tag={Link} onClick={() => (context.setUser(null))} style={{color:"#CAD5E2",padding:"5px"}}>Log Out</Nav.Link>) : <Row><Nav.Link tag={Link} href="https://harshyellare28.github.io/GithubSearchApp/SignUp" style={{color:"#CAD5E2",padding:"5px",marginLeft:"15px"}}>Sign Up</Nav.Link><Nav.Link tag={Link} href="https://harshyellare28.github.io/GithubSearchApp/" style={{color:"#CAD5E2",padding:"5px",paddingLeft:"10px",marginRight:"10px"}}>Sign In</Nav.Link></Row> } 
         </Nav>
         </Navbar.Collapse>
       </Navbar>

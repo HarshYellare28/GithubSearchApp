@@ -36,8 +36,8 @@ const App = () => {
       <UserContext.Provider value={{user,setUser}}>
         <Header/>
         <Switch>
-          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/" component={Home} />
-          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/SignIn" component={SignIn} />
+          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/" component={SignIn} />
+          <Route exact path="https://harshyellare28.github.io/GithubSearchApp/Home" component={Home} />
           <Route exact path="https://harshyellare28.github.io/GithubSearchApp/SignUp" component={SignUp} />
           <Route exact path="https://harshyellare28.github.io/GithubSearchApp/*" component={NotFound} />
         </Switch>
