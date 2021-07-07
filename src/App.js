@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css';
 
 //react router
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom"
+import {HashRouter as Router,Switch,Route,Link} from "react-router-dom"
 
 //Toast
 import {ToastContainer} from "react-toastify"
@@ -31,7 +31,7 @@ firebase.initializeApp(firebaseConfig)
 const App = () => {
   const [user,setUser] = useState(null);
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <ToastContainer/>
       <UserContext.Provider value={{user,setUser}}>
         <Header/>
